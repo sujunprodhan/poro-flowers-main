@@ -8,9 +8,6 @@
 
 
 /* share style start */
-body * {
-  border: 1px solid red;
-}
 
 .width {
   max-width: 1140px;
@@ -84,6 +81,7 @@ section {
   font-weight: 600;
   width: 100%;
   padding: 15px 50px 15px 50px;
+  border: none;
 }
 
 /* share style end */
