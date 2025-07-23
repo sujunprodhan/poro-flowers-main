@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* share style start */
+body * {
+  border: 1px solid red;
+}
+
+.width {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  gap: 48px;
+}
+
+section {
+  margin: 120px auto;
+}
+
+.nav_bar {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu_item {
+  font-family: "Inter";
+  font-size: 1rem;
+  font-weight: 700;
+  color: #252432;
+}
+
+.banner_title {
+  font-family: "Noto Serif";
+  font-size: 4rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+.title {
+  font-family: "Noto Serif";
+  font-size: 3.12rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+.title span {
+  color: #E95A08;
+}
+
+.paragraph {
+  font-family: "Inter";
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.cart_title {
+  font-family: "Inter";
+  font-size: 1.37rem;
+  font-weight: 500;
+  color: rgb(17, 17, 17);
+}
+
+.cart_price {
+  font-family: "Inter";
+  font-size: 1.37rem;
+  font-weight: 700;
+}
+
+.cart_btn {
+  background-color: #E95A08;
+  font-family: "Inter";
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+  width: 100%;
+  padding: 15px 50px 15px 50px;
+}
+
+/* share style end */
+
+
+/* header style start */
+.nav_conatainer {
+  margin: 30px auto;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+.mobile_nav {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile {
+  display: none;
+}
+
+/* banner style start */
+.banner {
+  align-items: center;
+}
+
+.banner_title span {
+  color: #E95A08;
+}
+
+.banner_left {
+  width: 50%;
+}
+
+.banner_right {
+  width: 50%;
+}
+
+.banner_right img {
+  width: 100%;
+}
+
+/* banner style end */
+/* header style end */
+
+
+/* plan style start */
+
+.plan_content {
+  text-align: center;
+}
+
+/* plan style end */
+
+
+/* flower style start */
+
+.flowar_content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  gap: 20px;
+}
+
+.flowar_content * {
+  margin-bottom: 20px;
+}
+
+.flowar_content img {
+  width: 100%;
+}
+
+/* flower style end */
+
+/* plants lover style start */
+.plants_lover {
+  margin-top: 210px;
+}
+
+.plant_left img {
+  width: 100%;
+}
+
+.reword_img {
+  position: absolute;
+}
+
+.reword_img img {
+  width: 30%;
+  margin-left: 280px;
+  margin-top: -200px;
+}
+
+.plant_left {
+  width: 50%;
+}
+
+.plant_right {
+  margin-top: 40px;
+}
+
+.plant_right * {
+  margin-bottom: 20px;
+}
+
+.plant_right {
+  width: 50%;
+}
+
+.plant_right ul li {
+  font-size: 1.37rem;
+}
+
+/* plants lover style end */
+
+@media screen and (max-width: 576px) {
+  .nav_conatainer {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    align-items: center;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+  }
+
+  .banner_title {
+    font-family: "Noto Serif";
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .banner_title span {
+    color: #E95A08;
+  }
+
+  .flowar_content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .banner_left {
+    width: 100%;
+  }
+
+  .banner_right {
+    width: 100%;
+  }
+
+  .plant_left {
+    width: 100%;
+  }
+
+  .plant_right {
+    width: 100%;
+  }
+
+  .plant_left img {
+    width: 100%;
+  }
+
+  .plant_content {
+    flex-direction: column-reverse;
+  }
+
+  .reword_img {
+    display: none;
+  }
+}
+
+
+
+/* midium device */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {}
