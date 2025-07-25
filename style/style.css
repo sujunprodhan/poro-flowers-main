@@ -6,6 +6,9 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f5f8ff;
+}
 
 /* share style start */
 
@@ -16,7 +19,6 @@
 
 .flex {
   display: flex;
-  gap: 48px;
 }
 
 section {
@@ -37,6 +39,14 @@ section {
   font-size: 1rem;
   font-weight: 700;
   color: #252432;
+  margin-left: 40px;
+}
+
+.home:active {
+  color: #252432;
+}
+ .shop .about {
+  color: #8987A1;
 }
 
 .banner_title {
@@ -51,6 +61,7 @@ section {
   font-size: 3.12rem;
   font-weight: 700;
   color: #000000;
+  margin-bottom: 10px;
 }
 
 .title span {
@@ -103,6 +114,7 @@ ul li {
 ul li a {
   text-decoration: none;
   cursor: pointer;
+  margin-left: 40px;
 }
 
 .mobile_nav {
@@ -141,6 +153,10 @@ ul li a {
   text-align: center;
 }
 
+.title {
+  font-size: 3.125rem;
+}
+
 /* flower style start */
 
 .flowar_content {
@@ -162,15 +178,32 @@ ul li a {
 /* plants lover style start */
 .plants_lover {
   margin-top: 210px;
+
 }
 
-.plan_short {
-  max-width: 850px;
-  margin: 0 auto;
-  margin-top: 16px;
+.plant_content {
+  justify-content: space-between;
 }
 
-.paragraph li {
+.plant_left {
+  width: 45%;
+}
+
+.plant_right {
+  margin-top: 40px;
+}
+
+.plant_right * {
+  margin-bottom: 20px;
+}
+
+.plant_right {
+  width: 45%;
+  margin-left: 16px;
+}
+
+.plant_right ul li {
+  font-size: 1.37rem;
   list-style: disc;
 }
 
@@ -183,31 +216,10 @@ ul li a {
 }
 
 .reword_img img {
-  width: 30%;
-  margin-left: 280px;
-  margin-top: -200px;
+  width: 35%;
+  margin-left: 260px;
+  margin-top: -230px;
 }
-
-.plant_left {
-  width: 50%;
-}
-
-.plant_right {
-  margin-top: 40px;
-}
-
-.plant_right * {
-  margin-bottom: 20px;
-}
-
-.plant_right {
-  width: 50%;
-}
-
-.plant_right ul li {
-  font-size: 1.37rem;
-}
-
 
 /* latest deal start */
 .latest_deal {
@@ -393,9 +405,14 @@ ul li a {
   margin-bottom: 20px;
 }
 
+
 /* newsletter style end */
 
 @media screen and (max-width: 576px) {
+  section {
+    margin: 90px auto;
+  }
+
   .nav_conatainer {
     display: none;
   }
@@ -413,14 +430,23 @@ ul li a {
 
   .banner {
     flex-direction: column-reverse;
-    margin: 0px 16px;
+  }
+
+  .banner_left {
+    padding: 0 16px;
+  }
+
+  .banner_left p {
+    font-size: 0.87rem;
   }
 
   .banner_title {
     font-family: "Noto Serif";
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #000000;
+    max-width: 191px;
+    margin: 13px 0px;
   }
 
   .banner_title span {
@@ -432,13 +458,24 @@ ul li a {
     margin: 0px 16px;
   }
 
+  .flowar_content * {
+    margin-bottom: 10px;
+  }
+
+  .flowar_content .cart_btn {
+    margin-top: 10px;
+  }
+
   .plant_right h1 {
+    font-size: 1.5rem;
+  }
+
+  .plan_content h1 {
     font-size: 1.5rem;
   }
 
   .plant_right ul li {
     list-style: disc;
-    margin-left: 30px;
     font-size: 1rem;
   }
 
@@ -481,14 +518,19 @@ ul li a {
     display: none;
   }
 
+  .deal_title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .deal_short {
+    font-size: 0.87rem;
+  }
+
   .deal_image {
     flex-direction: column;
     width: 100%;
-    margin: 0px 16px;
-  }
-
-  .deal_images {
-    margin: 0px 16px;
+    padding: 0 16px;
   }
 
   .image_left {
@@ -497,6 +539,22 @@ ul li a {
 
   .image_3 {
     width: 100%;
+    height: 250px;
+  }
+
+  .image_3 h1 {
+    font-size: 1.25rem;
+    color: #fff;
+  }
+
+  .image_3 button {
+    font-family: "Inter";
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
   }
 
   .news_box {
@@ -512,6 +570,21 @@ ul li a {
 
   .footer_card {
     flex-direction: column;
+    margin: 0px 16px;
+  }
+
+  .news_text {
+    font-size: 1rem;
+  }
+
+  .menu_card {
+    margin-top: 20px;
+  }
+
+  .social_icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
 }
 
